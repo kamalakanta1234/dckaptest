@@ -1,0 +1,7 @@
+
+RewriteEngine On
+RewriteBase /dckaptest/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /dckaptest/index.php [L]
